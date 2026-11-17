@@ -51,7 +51,7 @@ SU_REGEXES = (
 )
 
 
-T = TypeVar("T")
+T = TypeVar("T", covariant=True)
 
 
 class FactBase(Generic[T]):
